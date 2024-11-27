@@ -19,6 +19,16 @@
           <img src="carrito.png" alt="Carrito de compras" width="25px" height="20px" class="carrito-img"> 
       </ul>
   </nav>
+  <script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) { // Cambiar color si el scroll es mayor a 50px
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 
   <div class="encabezado2"> 
     <h1>CIELO MIO <br> SORPRESAS</h1>
@@ -29,34 +39,14 @@
         Desayunos y comidas sorpresa ❤️ Regalos personalizados ❤️<br>
         Envío a domicilio en Reynosa y Río Bravo 🚗
     </p>
-    <h2>A continuación nuestros paquetes:</h2>
-  </div>
 
-  <!-- Contenedor para imagen, video y GIF -->
-  <div class="contenedor-media">
-    <div class="imagenes">
-        <img src="paqueteluna.jpg"  alt="paqueteluna">
-        <img src="paquetearcoiris.jpg"  alt="paquetearcoiris">
-        <img src="paquetenoche.jpg"  alt="paquetenoche">
-        <img src="paqueteceleste.jpg"  alt="paqueteceleste">
-        <img src="paquetenube.jpg" alt="paquetenube">
-        <img src="paqueteaurora.jpg"  alt="paqueteaurora">
-        <img src="paqueteasteroide.jpg" alt="paqueteasteroide">
-        <img src="paqueteestrella.jpg"  alt="paqueteestrella">
-        <img src="paquetesol.jpg"  alt="paquetesol">
-        <img src="paquetefugaz.jpg"  alt="paquetefugaz">
-        <img src="paqueteconstelacion.jpg"  alt="paqueteconstelacion">
-        <img src="paqueteuniverso.jpg"  alt="paqueteuniverso">
-        <img src="paquetesinfantiles.jpg"  alt="paquetesinfantiles">
-        <img src="paquetecielito.jpg"  alt="paquetecielito">
-        <img src="paquetenuggets.jpg"  alt="paquetenuggets">
-        <img src="paquetepizza.jpg"  alt="paquetepizza">
-    </div>
+    
   </div>
 
   <div class="carousel">
+    <h2>¡¿Como sorprender a tu persona especial?!</h2>
     <div class="carousel-track">
-     
+   
       <img src="como.jpg" alt="Imagen 0-5" class="carousel-image">
       <img src="selecciondepaquete.jpg" alt="Imagen 1" class="carousel-image">
       <img src="tomadedatos.jpg" alt="Imagen 2" class="carousel-image">
@@ -79,6 +69,127 @@
     <button class="carousel-button prev">←</button>
     <button class="carousel-button next">→</button>
   </div>
+
+  <!-- Contenedor para imagen, video y GIF -->
+  <div class="contenedor-media">
+    <h2>A continuación nuestros paquetes:</h2>
+    <div class="imagenes">
+        <div class="media-item">
+            <img src="paqueteluna.jpg" alt="Paquete Luna">
+            <div class="descripcion">
+                <p>Paquete Luna</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetearcoiris.jpg" alt="Paquete Arcoiris">
+            <div class="descripcion">
+                <p>Paquete Arcoiris</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetenoche.jpg" alt="Paquete Noche">
+            <div class="descripcion">
+                <p>Paquete Noche</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paqueteceleste.jpg" alt="Paquete Celeste">
+            <div class="descripcion">
+                <p>Paquete Celeste</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetenube.jpg" alt="Paquete Nube">
+            <div class="descripcion">
+                <p>Paquete Nube</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paqueteaurora.jpg" alt="Paquete Aurora">
+            <div class="descripcion">
+                <p>Paquete Aurora</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paqueteasteroide.jpg" alt="Paquete Asteroide">
+            <div class="descripcion">
+                <p>Paquete Asteroide</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paqueteestrella.jpg" alt="Paquete Estrella">
+            <div class="descripcion">
+                <p>Paquete Estrella</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetesol.jpg" alt="Paquete Sol">
+            <div class="descripcion">
+                <p>Paquete Sol</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetefugaz.jpg" alt="Paquete Fugaz">
+            <div class="descripcion">
+                <p>Paquete Fugaz</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paqueteconstelacion.jpg" alt="Paquete Constelación">
+            <div class="descripcion">
+                <p>Paquete Constelación</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paqueteuniverso.jpg" alt="Paquete Universo">
+            <div class="descripcion">
+                <p>Paquete Universo</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetesinfantiles.jpg" alt="Paquetes Infantiles">
+            <div class="descripcion">
+                <p>Paquetes Infantiles</p>
+               
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetecielito.jpg" alt="Paquete Cielito">
+            <div class="descripcion">
+                <p>Paquete Cielito</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetenuggets.jpg" alt="Paquete Nuggets">
+            <div class="descripcion">
+                <p>Paquete Nuggets</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="media-item">
+            <img src="paquetepizza.jpg" alt="Paquete Pizza">
+            <div class="descripcion">
+                <p>Paquete Pizza</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
   <div class="pie2">
     <div class="contacto-mapa">
         <!-- Información de contacto a la izquierda -->
