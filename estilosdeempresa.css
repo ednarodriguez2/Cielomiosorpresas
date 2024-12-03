@@ -2,12 +2,12 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 body {
     font-family: Arial, sans-serif;
     background: rgb(246, 240, 241);
     margin: 0;
-    padding: 30px;
+   
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -17,10 +17,10 @@ body {
     background-image: url(logocielo.jpg);
     font-family: 'Lora';
     color: white;
-    padding: 80px 20px 80px 70px;
+    padding: 200px 10px 30px 20px;
     text-align: left;
     font-size: 30px;
-    height: 300px; 
+    height: 550px; 
     background-size: 100% 100%;
 }
 
@@ -34,18 +34,24 @@ body {
     z-index: 1000;
 }
 
+.menu i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
 .menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: center;
     height: 60px;
 }
 
 .menu li {
-    margin: 0 20px;
+    margin: 30px 20px;
 }
 
 .menu a {
@@ -60,13 +66,14 @@ body {
     color: white;
 }
 .menu a:hover {
-    background-color: #575757;
+    background-color: #f69ece;
     border-radius: 5px;
 }
 
 .menu a img {
     width: 20px;
     margin-right: 8px;
+    padding-left: 20px;
 }
 
 .content {
@@ -290,3 +297,46 @@ h1 {
         font-size: 4.5vw;
     }
 }
+
+#scrollTopButton {
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px; /* Separado 20px del borde inferior */
+    right: 20px; /* Separado 20px del borde derecho */
+    background-color: #e79cc0; /* Color de fondo */
+    color: white; /* Color del texto/icono */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    font-size: 18px; /* Tamaño del texto/icono */
+    display: none; /* Oculto por defecto */
+    align-items: center; /* Centra el contenido */
+    justify-content: center; /* Centra el contenido */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Suavidad */
+}
+
+#scrollTopButton:hover {
+    background-color: #e51b91; /* Color al pasar el cursor */
+}
+
+#scrollTopButton.show {
+    display: flex; /* Mostrar el botón cuando sea necesario */
+    opacity: 1;
+    transform: scale(1);
+}
+
+#scrollTopButton.hide {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+
+#scrollTopButton:hover {
+    background-color: #d18ab0; /* Color más oscuro */
+    transform: scale(1.1); /* Ampliación leve */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Sombra más marcada */
+}
+
